@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button"
-import { Video, Download, MessageCircle, Heart } from "lucide-react"
+import { Video, Download, Heart, ChevronDown, Send } from "lucide-react"
 
 export default function Home() {
   return (
@@ -75,56 +75,7 @@ export default function Home() {
 
         {/* Scroll Indicator */}
         <div className="absolute bottom-12 left-1/2 -translate-x-1/2 animate-bounce">
-          <div className="w-6 h-10 rounded-full border-2 border-neutral-300 flex items-start justify-center p-2">
-            <div className="w-1.5 h-1.5 bg-neutral-400 rounded-full" />
-          </div>
-        </div>
-      </section>
-
-      {/* Features Section */}
-      <section className="py-24 px-6 relative">
-        <div className="max-w-7xl mx-auto">
-          <div className="grid md:grid-cols-3 gap-8 lg:gap-12">
-            <div className="space-y-4 p-8 rounded-3xl bg-white/80 backdrop-blur-sm border border-neutral-200/50 hover:border-blue-300/50 hover:shadow-xl hover:shadow-blue-500/10 hover:-translate-y-1 transition-all duration-300">
-              <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-blue-50 to-blue-100 flex items-center justify-center shadow-lg shadow-blue-500/20">
-                <Video className="h-7 w-7 text-blue-600" />
-              </div>
-              <h3 className="text-xl font-bold">Без регистрации</h3>
-              <p className="text-neutral-600 leading-relaxed text-pretty">
-                Просто откройте ссылку или создайте комнату. Никаких аккаунтов и сложных настроек.
-              </p>
-            </div>
-
-            <div className="space-y-4 p-8 rounded-3xl bg-white/80 backdrop-blur-sm border border-neutral-200/50 hover:border-green-300/50 hover:shadow-xl hover:shadow-green-500/10 hover:-translate-y-1 transition-all duration-300">
-              <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-green-50 to-green-100 flex items-center justify-center shadow-lg shadow-green-500/20">
-                <svg className="h-7 w-7 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"
-                  />
-                </svg>
-              </div>
-              <h3 className="text-xl font-bold">Безопасно</h3>
-              <p className="text-neutral-600 leading-relaxed text-pretty">
-                Все соединения защищены шифрованием. Ваши разговоры остаются конфиденциальными.
-              </p>
-            </div>
-
-            <div className="space-y-4 p-8 rounded-3xl bg-white/80 backdrop-blur-sm border border-neutral-200/50 hover:border-purple-300/50 hover:shadow-xl hover:shadow-purple-500/10 hover:-translate-y-1 transition-all duration-300">
-              <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-purple-50 to-purple-100 flex items-center justify-center shadow-lg shadow-purple-500/20">
-                <svg className="h-7 w-7 text-purple-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-                </svg>
-              </div>
-              <h3 className="text-xl font-bold">Быстро</h3>
-              <p className="text-neutral-600 leading-relaxed text-pretty">
-                Стабильное соединение и минимальная задержка для комфортного общения.
-              </p>
-            </div>
-            {/* </CHANGE> */}
-          </div>
+          <ChevronDown className="w-8 h-8 text-neutral-400" strokeWidth={2} />
         </div>
       </section>
 
@@ -146,7 +97,7 @@ export default function Home() {
                   Ваш браузер не поддерживает видео.
                 </video>
               </div>
-              <h3 className="text-xl font-semibold text-center">Использование на веб</h3>
+              <h3 className="text-xl font-semibold text-center">Использование в браузере</h3>
             </div>
 
             <div className="space-y-6">
@@ -156,47 +107,36 @@ export default function Home() {
                   Ваш браузер не поддерживает видео.
                 </video>
               </div>
-              <h3 className="text-xl font-semibold text-center">Использование на мобильном</h3>
+              <h3 className="text-xl font-semibold text-center">Использование в смартфоне</h3>
             </div>
             {/* </CHANGE> */}
           </div>
         </div>
       </section>
 
-      {/* Donation Section - After Videos */}
-      <section className="py-24 px-6 relative">
-        <div className="max-w-4xl mx-auto">
-          <div className="relative overflow-hidden rounded-[2rem] bg-gradient-to-br from-pink-500/90 via-purple-600/90 to-indigo-600/90 p-12 md:p-16 shadow-2xl shadow-purple-500/30">
-            <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PHBhdHRlcm4gaWQ9ImdyaWQiIHdpZHRoPSI2MCIgaGVpZ2h0PSI2MCIgcGF0dGVyblVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHBhdGggZD0iTSAxMCAwIEwgMCAwIDAgMTAiIGZpbGw9Im5vbmUiIHN0cm9rZT0id2hpdGUiIHN0cm9rZS1vcGFjaXR5PSIwLjA1IiBzdHJva2Utd2lkdGg9IjEiLz48L3BhdHRlcm4+PC9kZWZzPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JpZCkiLz48L3N2Zz4=')] opacity-30" />
-
-            <div className="relative text-center space-y-8 text-white">
-              <div className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-white/20 backdrop-blur-md shadow-xl">
-                <Heart className="h-10 w-10 text-white" fill="white" />
-              </div>
-
-              <div className="space-y-4">
-                <h2 className="text-3xl md:text-5xl font-bold text-balance">Поддержите проект</h2>
-                <p className="text-white/90 text-lg md:text-xl max-w-xl mx-auto leading-relaxed text-balance">
-                  Помогите развивать бесплатный сервис видеосвязи для всех. Ваша поддержка делает Telemost лучше.
-                </p>
-              </div>
-
-              <Button
-                size="lg"
-                className="bg-white hover:bg-white/90 text-purple-600 font-bold px-12 py-7 text-lg rounded-2xl shadow-2xl hover:shadow-white/20 hover:scale-105 transition-all duration-300"
-                asChild
-              >
-                <a href="https://donate.example.com" target="_blank" rel="noopener noreferrer">
-                  <Heart className="mr-2 h-6 w-6" />
-                  Поддержать проект
-                </a>
-              </Button>
-
-              <p className="text-sm text-white/80 pt-4">Любой вклад ценен и помогает нам поддерживать сервис</p>
-            </div>
+      {/* Support Section */}
+      <section className="py-24 px-6">
+        <div className="max-w-5xl mx-auto text-center">
+          <div className="space-y-4">
+            <h2 className="text-4xl md:text-5xl font-bold">Узнать больше</h2>
+            <p className="text-neutral-600 text-lg max-w-2xl mx-auto leading-relaxed text-balance">
+              Следите за обновлениями и получайте поддержку в Telegram канале и чате
+            </p>
+          </div>
+          <div className="flex flex-col sm:flex-row mt-12 justify-center items-center">
+            <Button
+              size="lg"
+              variant="outline"
+              className="border-2 border-neutral-900/80 bg-white/80 backdrop-blur-sm hover:bg-neutral-900 hover:text-white text-neutral-900 font-semibold px-10 py-7 rounded-2xl shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300"
+              asChild
+            >
+              <a href="https://t.me/telemost_support" target="_blank" rel="noopener noreferrer">
+                <Send className="mr-2 h-5 w-5" />
+                Канал в Telegram
+              </a>
+            </Button>
           </div>
         </div>
-        {/* </CHANGE> */}
       </section>
 
       {/* Download Section */}
@@ -246,21 +186,34 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Support Section */}
-      <section className="py-16 px-6">
-        <div className="max-w-5xl mx-auto text-center">
-          <Button
-            size="lg"
-            variant="outline"
-            className="border-2 border-neutral-900/80 bg-white/80 backdrop-blur-sm hover:bg-neutral-900 hover:text-white text-neutral-900 font-semibold px-10 py-7 rounded-2xl shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300"
-            asChild
-          >
-            <a href="https://t.me/telemost_support" target="_blank" rel="noopener noreferrer">
-              <MessageCircle className="mr-2 h-5 w-5" />
-              Поддержка в Telegram
-            </a>
-          </Button>
-          {/* </CHANGE> */}
+      {/* Donation Section */}
+      <section className="py-24 px-6">
+        <div className="max-w-3xl mx-auto">
+          <div className="bg-white/80 backdrop-blur-sm rounded-3xl border border-neutral-200/60 shadow-lg shadow-neutral-900/5 p-10 md:p-14 text-center space-y-8">
+            <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-amber-100 border border-amber-200">
+              <Heart className="h-8 w-8 text-amber-600" />
+            </div>
+
+            <div className="space-y-4">
+              <h2 className="text-3xl md:text-4xl font-bold text-neutral-900">
+                Нравится Telemost?
+              </h2>
+            </div>
+
+            <Button
+              size="lg"
+              className="bg-amber-500 hover:bg-amber-600 text-white font-semibold px-10 py-6 rounded-2xl shadow-lg shadow-amber-500/20 hover:shadow-xl hover:scale-105 transition-all duration-300"
+              asChild
+            >
+              <a href="https://donate.example.com" target="_blank" rel="noopener noreferrer">
+                Поддержать проект
+              </a>
+            </Button>
+
+            <p className="text-sm text-neutral-500">
+              100% средств идёт на развитие сервиса
+            </p>
+          </div>
         </div>
       </section>
 

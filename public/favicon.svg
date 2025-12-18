@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="180" height="180"><svg width="180" height="180" viewBox="0 0 180 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    @media (prefers-color-scheme: light) {
+      .background { fill: #171717; }
+      .foreground { fill: white; }
+    }
+    @media (prefers-color-scheme: dark) {
+      .background { fill: white; }
+      .foreground { fill: #171717; }
+    }
+  </style>
+  <rect class="background" width="180" height="180" rx="40"></rect>
+  <!-- Old-time phone receiver -->
+  <path class="foreground" d="M45 65C45 55 52 48 62 48C72 48 78 54 80 62L84 78C86 86 82 92 76 96L68 100C72 112 80 120 92 124L96 116C100 110 106 106 114 108L130 112C138 114 144 124 144 134C144 144 137 152 127 152C87 152 45 110 45 70V65Z"></path>
+</svg><style>@media (prefers-color-scheme: light) { :root { filter: none; } }
+@media (prefers-color-scheme: dark) { :root { filter: none; } }
+</style></svg>
